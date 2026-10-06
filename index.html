@@ -108,6 +108,12 @@ input[type=text]:focus{outline:2px solid var(--accent2)}
 .cmp .mono{font-size:15px}
 footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
 @media(max-width:480px){.dots{gap:10px}.grp{gap:3px}.dot{width:17px;height:17px}.dots.sm{gap:8px}.dots.sm .dot{width:12px;height:12px}.dots.sm .grp{gap:3px}.hero-dots .dot{width:16px;height:16px}.play{padding:18px}.card{padding:16px}}
+.fl{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px;text-align:left;margin-bottom:28px}
+.fl h4{font:600 12px/1.3 ui-monospace,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-bottom:8px}
+.fl a{display:block;color:var(--accent2);text-decoration:none;word-break:break-all;margin:2px 0}
+.fl a:hover{text-decoration:underline}
+.fl .sep{color:var(--muted);margin:0 6px}
+.fnote{border-top:1px solid var(--line);padding-top:22px}
 @media print{nav,.hero,section:not(#frase),footer,.ctrl,.lead,.eyebrow,h2{display:none!important}body{background:#fff;color:#000}.cell{border-color:#999;background:#fff}.dot{border-color:#000}.dot.on{background:#000;box-shadow:none;border-color:#000}}
 </style>
 </head>
@@ -235,7 +241,17 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 </div></section>
 
 <footer><div class="wrap">
+  <div class="fl">
+    <div><h4>⚡ Doações</h4><a href="lightning:perfectgrip48@walletofsatoshi.com">perfectgrip48@walletofsatoshi.com</a></div>
+    <div><h4>₿ Comprar Bitcoin com PIX</h4><a href="https://depix.st" target="_blank" rel="noopener">depix.st</a></div>
+    <div><h4>Outras soluções do Ojeda</h4><a href="https://felipecojeda.github.io/ojedalabs/" target="_blank" rel="noopener">ojedalabs</a></div>
+    <div><h4>Acervo de Artigos e Vídeos do Ojeda</h4><a href="https://felipecojeda.github.io/catalogo-busca/" target="_blank" rel="noopener">catalogo-busca</a></div>
+    <div><h4>⛓ Registrar na Blockchain</h4><a href="https://eternize.st" target="_blank" rel="noopener" style="display:inline">eternize.st</a><span class="sep">|</span><a href="https://t.me/BTCopreturn_bot" target="_blank" rel="noopener" style="display:inline">@BTCopreturn_bot</a></div>
+    <div><h4>▶ Baixar vídeos sem Ads</h4><a href="https://t.me/LNdownloadbot" target="_blank" rel="noopener">@LNdownloadbot</a></div>
+  </div>
+  <div class="fnote">
   Página explicativa independente sobre <a href="https://github.com/OneKeyHQ/bip39-dotmap" target="_blank" rel="noopener">OneKeyHQ/bip39-dotmap</a>. Tudo roda localmente no seu navegador; nada é enviado a servidor algum.
+  </div>
 </div></footer>
 
 <script>
